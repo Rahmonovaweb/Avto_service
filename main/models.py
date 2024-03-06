@@ -53,7 +53,7 @@ class Cassa(models.Model):
         verbose_name_plural = 'Kassallar'
 
 class Order(models.Model):
-    owner_name = models.CharField(max_length=255, verbose_name="")
+    owner_name = models.CharField(max_length=255, verbose_name="ism")#ism
     is_delivery = models.BooleanField(default=False, verbose_name="Yetkazib berish")
     address = models.CharField(max_length=255, verbose_name="Manzil")
     car_name = models.CharField(max_length=255, verbose_name="Moshina nomi")
